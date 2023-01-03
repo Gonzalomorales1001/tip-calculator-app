@@ -1,0 +1,78 @@
+:root{
+    --StrongCyan: hsl(172, 67%, 45%);
+
+    --VeryDarkCyan: hsl(183, 100%, 15%);
+    --DarkGrayishCyan: hsl(186, 14%, 43%);
+    --GrayishCyan: hsl(184, 14%, 56%);
+    --LightGrayishCyan: hsl(185, 41%, 84%);
+    --VeryLightGrayishCyan: hsl(189, 41%, 97%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+body{
+    background-color: var(--LightGrayishCyan);
+}
+
+.container-fluid, .container{
+    background-color: var(--VeryLightGrayishCyan);
+    border-radius: 25px 25px 0px 0px;
+    padding: 20px;
+}
+
+.container__section{
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.container__section__input{
+    color: var(--VeryDarkCyan);
+    border:none;
+    text-align: end;
+    font-weight: 700;
+    font-size: x-large;
+    margin: 10px;
+    display:inline-block;
+    width: 100%;
+}
+
+.container__section h5{
+    color: var(--DarkGrayishCyan);
+    font-weight: 700;
+}
+
+.container__section--color{
+    background-color: var(--VeryDarkCyan);
+}
+
+.container__section--color h5{
+    color: var(--VeryLightGrayishCyan);
+}
+
+.form{
+    display: grid;
+    justify-content: center;
+    grid-template:repeat(3,1fr)/ repeat(2,1fr) ;
+    gap: 1.3rem;
+    margin: 1.5rem 0px;
+}
+
+.form button{
+    background-color: var(--VeryDarkCyan);
+    font-size: x-large;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: var(--VeryLightGrayishCyan);
+    font-weight: 700;
+}
+
+.form button:hover{
+    background-color: var(--StrongCyan);
+    color: var(--VeryDarkCyan);
+}
