@@ -8,20 +8,59 @@
   <meta name="keywords" content="calculator, tip, percentage, html, css, javascript">
   <meta name="author" content="Gonzalo Morales">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/bootstrap-grid.css"> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="/css/bootstrap-grid.css"> -->
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body class="">
+  <header><img src="/images/logo.svg" alt="SPLITTER"></header>
+  <main>
+      <section class="">
+        <div class="section__complete">
+          <h5>Bill</h5>
+          <div class="section__input--before section__input--1st_input">
+            <input class="section__input" type="text" placeholder="0" maxlength="10" name="bill" id="bill">
+          </div>
+        </div>
+
+        <div class="section__complete">
+          <h5>Select Tip %</h5>
+          <form action="" class="section__buttons">
+            <button class="section__button">5%</button>
+            <button class="section__button">10%</button>
+            <button class="section__button">15%</button>
+            <button class="section__button">25%</button>
+            <button class="section__button">50%</button>
+            <input  class="section__button section__button--input" type="text" placeholder="Custom">
+          </form>
+        </div>
+
+        <div class="section__complete">
+          <h5>Number of People</h5>
+          <div class="section__input--before section__input--2nd_input">
+            <input class="section__input" type="text" placeholder="0" maxlength="10" name="people" id="people">
+          </div>
+        </div>
+      </section>
+      <section class="">
+          <div class="section__display">
+            <div class="">
+              <h5>Tip Amount</h5>
+              <small>/ person</small>
+            </div>
+            <p class="section__display__amount">0.00</p>
+          </div>
+          <div class="section__display"">
+            <div class="">
+              <h5>Total</h5>
+              <small>/ person</small>
+            </div>
+            <p class="section__display__amount">0.00</p>
+          </div>
+        <button class="section__button section__button--reset" disabled>RESET</button>
+      </section>
   </main>
 
   
