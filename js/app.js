@@ -48,7 +48,6 @@ const verify=(value)=>{
 }
 
 const calculate=(value)=>{
-    console.log(`Selected: ${value}%`)
     parseFloat(value)
 
     if(!isNaN(value)){
