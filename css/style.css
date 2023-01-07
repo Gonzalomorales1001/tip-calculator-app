@@ -72,8 +72,18 @@ main section:nth-child(2){
     color: var(--VeryDarkCyan);
 }
 
+.zero{
+    position: absolute;
+    top:0px;
+    right: 10px;
+    font-weight: 700;
+    color: #F77;
+    display: none;
+}
+
 .section__input:hover{outline:3px solid var(--StrongCyan);}
 .section__input:focus{outline:3px solid var(--StrongCyan);}
+
 
 .section__input--before{position: relative;}
 
@@ -83,6 +93,8 @@ main section:nth-child(2){
     left: 15px
 }
 
+.section__input::placeholder{color:var(--GrayishCyan)}
+
 .section__input--1st_input::before{
     content: url(/images/icon-dollar.svg);
 }
@@ -90,6 +102,13 @@ main section:nth-child(2){
 .section__input--2nd_input::before{
     content: url(/images/icon-person.svg);
 }
+
+/* .section__input--2nd_input h5{
+    position: absolute;
+    right: 10px;
+    top:-20px;
+    font-weight: 700;
+} */
 
 .section__display{
     display: flex;
@@ -113,7 +132,7 @@ main section:nth-child(2){
     display: grid;
     grid-template: repeat(2,45px)/repeat(3,1fr);
     gap: 15px;
-    margin: 5px 0px;
+    margin-top: 10px;
 }
 
 .section__button{
@@ -158,12 +177,10 @@ main section:nth-child(2){
     color: var(--VeryDarkCyan);
 }
 
-.section__button--input:focus{
-    outline: 2px solid var(--StrongCyan);
-
-}
-
+.section__button--input:focus{outline: 2px solid var(--StrongCyan);}
 .section__button--input:hover{background-color: transparent;}
+
+.section__button--input::placeholder{color:var(--DarkGrayishCyan)}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -180,9 +197,11 @@ main section:nth-child(2){
         gap: 25px;
     }
 
+    .section__button--reset{margin-top: 0px;}
+}
+
+@media (max-width:576px) {
     .section__buttons{
         grid-template: repeat(3,45px)/repeat(2,1fr);
     }
-
-    .section__button--reset{margin-top: 0px;}
 }
