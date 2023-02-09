@@ -18,6 +18,6 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 coming soon...
 
-<!-- [Netlify]
+[Netlify](https://tipcalculatorapp-gm.netlify.app/)
 
-[FrontEndMentor] -->
+[FrontEnd Mentor](https://www.frontendmentor.io/solutions/made-without-frameworks-with-bem-methodology-a729QP0TGB)
