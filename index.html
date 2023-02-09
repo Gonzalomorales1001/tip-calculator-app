@@ -27,13 +27,13 @@
 
         <div class="section__complete">
           <h5>Select Tip %</h5>
-          <div action="" class="section__buttons"">
+          <div class="section__buttons">
             <button class="section__button btn-tip" onclick="verify(5)" value="5" >5%</button>
             <button class="section__button btn-tip" onclick="verify(10)" value="10">10%</button>
             <button class="section__button btn-tip" onclick="verify(15)" value="15">15%</button>
             <button class="section__button btn-tip" onclick="verify(25)" value="25">25%</button>
             <button class="section__button btn-tip" onclick="verify(50)" value="50">50%</button>
-            <input  class="section__button section__button--input" onkeyup="verify(custom.value)" onclick="verify(custom.value)" id="custom-value" type="text" min="0" max="100" placeholder="Custom">
+            <input  class="section__button section__button--input" onkeyup="verify(custom.value)" onclick="verify(custom.value)" id="custom-value" type="text" placeholder="Custom">
           </div>
         </div>
 
@@ -44,16 +44,16 @@
           </div>
         </div>
       </section>
-      <section class="">
+      <section>
           <div class="section__display">
-            <div class="">
+            <div>
               <h5>Tip Amount</h5>
               <small>/ person</small>
             </div>
             <p class="section__display__amount" id="tip-amount">0.00</p>
           </div>
           <div class="section__display"">
-            <div class="">
+            <div>
               <h5>Total</h5>
               <small>/ person</small>
             </div>
